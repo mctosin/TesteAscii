@@ -4,6 +4,7 @@ echo
 input=$1
 #output=$(./main.o 15 36 18 44 222 0 -1 -33 44 120 31 -12 -2)
 #output=$(echo $input | ./main.o)
+#"input" entre aspas toma uma única string. Sem aspas considera varias strings separadas por espaço"
 output=$(./main.o "$input")
 
 #expected_output="-33 -12 -2 -1 0 15 18 31 36 44 44 120 222 "
