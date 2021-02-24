@@ -1,0 +1,2 @@
+C:\Repos\TesteAscii\Debug\TesteAscii.exe
+C:\Repos\TesteAscii\Debug\TesteAscii.pdb
