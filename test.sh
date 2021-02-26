@@ -7,7 +7,6 @@ input=$1
 #"input" entre aspas toma uma única string. Sem aspas considera varias strings separadas por espaço"
 output=$(./main.o "$input")
 
-#expected_output="-33 -12 -2 -1 0 15 18 31 36 44 44 120 222 "
 expected_output=$2
 
 if [ $? -eq 0 ] ; then
