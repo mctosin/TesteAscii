@@ -17,7 +17,7 @@ int main(int argc, char* argv[]) {
 	int caract_num = 0;
 	static char* a_string_ptr;
 
-	// Abre um arquivo texto apenas para leitura, 
+	// Abre um arquivo texto para leitura, 
 	// cujo nome está em argv[1].
 	// Copia o texto do arquivo para a string a_string_ptr, 
 	// criada dinamicamente.
