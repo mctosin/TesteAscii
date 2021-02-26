@@ -8,9 +8,9 @@ int main(int argc, char* argv[]) {
 	fprintf(stderr, "Entradas da main\n");
 	fprintf(stderr, "argv[0] = \"%s\"\n", argv[0]);
 	for (i = 1; i < argc; i++) {
-		printf("%s\n", argv[i]);
+		fprintf(stderr, "%s\n", argv[i]);
 	}
-	puts("");
+	fprintf(stderr, "\n");
 	
 	FILE* cfPtr;
 	char carct;
@@ -24,7 +24,7 @@ int main(int argc, char* argv[]) {
 	// Fecha o arquivo.
 	
 	if ((cfPtr = fopen(argv[1], "r")) == NULL) {
-		puts("File could not be opened");
+		fprintf(stderr, "File could not be opened\n");
 
 	}
 	else {
@@ -41,7 +41,7 @@ int main(int argc, char* argv[]) {
 			caract_num++;
 		} while (!feof(cfPtr));
 		a_string_ptr[caract_num] = '\0';
-		puts("");
+		fprintf(stderr, "\n");
 	}
 
 	fclose(cfPtr);
